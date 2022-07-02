@@ -10,8 +10,10 @@
 
         <div class="w-1/5 px-6 py-3 flex justify-end space-x-4">
             {% if not todo.is_done %}
-                <button class="text-sky-600 hover:text-sky-900">
-                    Done
+                <button class="text-sky-600 hover:text-green-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>Done
                 </button>
             {% endif %}
             <a href="#" class="text-sky-600 hover:text-sky-900">
@@ -20,7 +22,14 @@
                 </svg>Edit
             </a>
         
-            <a href="#" class="text-sky-600 hover:text-sky-900">
+            <a 
+                href="#"
+                class="text-sky-600 hover:text-red-600"
+                hx-confirm="Are you sure?"
+                hx-target="closest form"
+                hx-swap="outerHTML swap:1s"
+                hx-delete="/delete/{{ todo.id }}/"
+            >
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z" />
                 </svg>Delete
