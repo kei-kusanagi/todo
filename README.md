@@ -47,7 +47,7 @@ para abrirlo ahora que estamos en Linux un truquito, dentro del vcode le damos c
 
 asi lo abrimos en nuestro navegador y podemos ver como esta y deveria verse asi
 
-![image](README%20IMG/Pasted%2020220629180006.png)
+![image](README%20IMG/Pasted%20image%2020220629180006.png)
 
 luego le ponemos lo siguiente para que tenga el espaciado que queremos
 
@@ -77,7 +77,7 @@ luego le ponemos lo siguiente para que tenga el espaciado que queremos
 
 debe quedar asi (ojo es input no imput)
 
-![image](README%20IMG/Pasted%2020220629181426.png)
+![image](README%20IMG/Pasted%20image%2020220629181426.png)
 
 ahora le incluimos un baton de agregar asi
 
@@ -85,7 +85,7 @@ ahora le incluimos un baton de agregar asi
 <button class="p-3 rounded-xl text-white bg-cyan-500 hover:bg-cyan-600">+</button>
 ```
 
-![image](README%20IMG/Pasted%2020220629184436.png)
+![image](README%20IMG/Pasted%20image%2020220629184436.png)
 
 ahora agregamos el espacio donde ira el titulo y la acción abajo del form así
 
@@ -111,7 +111,7 @@ ahora agregamos el espacio donde ira el titulo y la acción abajo del form así
 
 quedando asi
 
-![image](README%20IMG/Pasted%2020220629184936.png)
+![image](README%20IMG/Pasted%20image%2020220629184936.png)
 
 ahora abajo de las acciones ponemos lo siguiente
 
@@ -130,7 +130,7 @@ ahora abajo de las acciones ponemos lo siguiente
 
             </div>
 ```
-![image](README%20IMG/Pasted%2020220629185318.png)
+![image](README%20IMG/Pasted%20image%2020220629185318.png)
 
 ahora necesitamos agregarle las acciones asi que agregamos otro div con lo siguiente
 
@@ -167,11 +167,11 @@ ahora necesitamos agregarle las acciones asi que agregamos otro div con lo sigui
 
             </div>
 ```
-![image](README%20IMG/Pasted%2020220629191041.png)
+![image](README%20IMG/Pasted%20image%2020220629191041.png)
 
 ahora vamos a heroicons.com y buscamos unos buenos SVG para ponerlos como botones
 
-![image](README%20IMG/Pasted%2020220629192653.png)
+![image](README%20IMG/Pasted%20image%2020220629192653.png)
 
 ahora necesitamos crear nuestro entorno virtual, pero como es en Ubuntu no es igual que como lo hacemos en PowerShell, asi que me fui a esta pagina donde lo explican todo https://atareao.es/como/entorno-virtual-en-python-como-y-para-que/
 
@@ -182,10 +182,10 @@ esto ya que estamos empezando en ubuntu y tenemos que crear un entorno virtual, 
 luego para activarlo escribimos ``source env/bin/activate``
 
 ya activado nuestro entorno le damos ``pip install django``  para poder empezar ahora si a crear nuestra app de django 
-![image](README%20IMG/Pasted%2020220630130542.png)
+![image](README%20IMG/Pasted%20image%2020220630130542.png)
 
 le damos ``django-admin startproject django_tailwind_todo`` para crear nuestro proyecto y  ``django-admin startapp todo`` para crear nuestra app
-![image](README%20IMG/Pasted%2020220630194718.png)
+![image](README%20IMG/Pasted%20image%2020220630194718.png)
 
 
 hago un parentesis aqui para enseñar como tube que crear una clave SSH para poder hacer commit en github
@@ -222,16 +222,16 @@ kei_kusanagi_99@CORTANA:~/wsl-proyects/todo$
 ```
 
 crei que eso que decia your key fingerprin era la clave y nop, la clave esta guardada en el archivo que termina en .pub
-![image](README%20IMG/Pasted%2020220630192953.png)
+![image](README%20IMG/Pasted%20image%2020220630192953.png)
 
 le di mostrar archivos en visual studio y me fui a la carpeta que decia alli y abri el archivo .pub en el block de notas
 
-![image](README%20IMG/Pasted%2020220630192650.png)
-![image](README%20IMG/Pasted%2020220630192810.png)
+![image](README%20IMG/Pasted%20image%2020220630192650.png)
+![image](README%20IMG/Pasted%20image%2020220630192810.png)
 
 ahora ya con esto me dejo hacer el push al repositorio
-![image](README%20IMG/Pasted%2020220630193540.png)
-![image](README%20IMG/Pasted%2020220630193556.png)
+![image](README%20IMG/Pasted%20image%2020220630193540.png)
+![image](README%20IMG/Pasted%20image%2020220630193556.png)
 
 ahora crearemos un view y lo probaremos
 asi que en ``/django_tailwind_todo/todo/views.py`` ponemos esto 
@@ -247,7 +247,7 @@ def todos(request):
 
 luego copiamos todo lo que hicimos en la plantilla design.html y creamos una carpeta y un archivo en la app de /todo/templates/todo/todos.html 
 
-![image](README%20IMG/Pasted%2020220630195305.png)
+![image](README%20IMG/Pasted%20image%2020220630195305.png)
 
 ahora como en cada proyecto de Django tenemos que ir a nuestro archivo de urls.py y declarar su path
 
@@ -272,10 +272,10 @@ urlpatterns = [
 ```
 
 solo nos falta declarar nuestra app en nuestro settings.py
-![image](README%20IMG/Pasted%2020220630200143.png)
+![image](README%20IMG/Pasted%20image%2020220630200143.png)
 listo ahora le damos nuestro amado `` python manage.py runserver`` 
 
-![image](README%20IMG/Pasted%2020220630202028.png)
+![image](README%20IMG/Pasted%20image%2020220630202028.png)
 
 que bonito, ahora crearemos una vista y agregaremos sus tareas
 
@@ -293,7 +293,7 @@ class Todo(models.Model):
 ```
 paramos nuestro servidor y hacemos las migraciones
 
-![image](README%20IMG/Pasted%2020220630212443.png)
+![image](README%20IMG/Pasted%20image%2020220630212443.png)
 
 entonces regresamos a nuestro archivo views.py e implementamos esta función
 
@@ -357,11 +357,11 @@ urlpatterns = [
 ]
 ```
 creamos una nueva carpeta dentro de /templates/todo llamada /partials y dentro creamos un archivo llamado todo.html
-![image](README%20IMG/Pasted%2020220630211339.png)
+![image](README%20IMG/Pasted%20image%2020220630211339.png)
 
 vamos a nuestro archivo todos.html y cortamos todo lo que es `<article>` ... `</article>` y lo pegamos en este nuevo archivo y corremos nuestro servidor
 
-![image](README%20IMG/Pasted%2020220630212234.png)
+![image](README%20IMG/Pasted%20image%2020220630212234.png)
 
 ahora vamos a nuestro archivo todos.html y agregamos esto a form y hasta abajo el script siguiente
 
@@ -400,7 +400,7 @@ ahora vamos a nuestro archivo todos.html y agregamos esto a form y hasta abajo e
 
 y probamos agregando una tarea por hacer
 
-![image](README%20IMG/Pasted%2020220630221810.png)
+![image](README%20IMG/Pasted%20image%2020220630221810.png)
 
 
 bien, ahora que ya podemos agregar tareas debemos verlas, para esto vamos a views.py y agregamos esto a la funcion
@@ -430,7 +430,7 @@ con esto estamos asignando todos los objetos del modelo Todo a un objeto llamado
 ```
 
 ahora le damos actualizar y tadaaaaaaan
-![image](README%20IMG/Pasted%2020220701125053.png)
+![image](README%20IMG/Pasted%20image%2020220701125053.png)
 
 pero aqui aun nos muestra el hard code "the todo title" entonces cambiaremos eso en la plantilla todo.html
 
@@ -444,7 +444,7 @@ pero aqui aun nos muestra el hard code "the todo title" entonces cambiaremos eso
     </div>
 ```
 
-![image](README%20IMG/Pasted%2020220701125345.png)
+![image](README%20IMG/Pasted%20image%2020220701125345.png)
 
 ahora quitaremos eso molestod e que creamos una nueva tarea y se queda el titulo alli con el siguiente script en en la plantilla todos.html abajo del otro script que pusimo
 
@@ -459,7 +459,7 @@ ahora quitaremos eso molestod e que creamos una nueva tarea y se queda el titulo
 
 ...
 ```
-![image](README%20IMG/Pasted%2020220701131438.png)
+![image](README%20IMG/Pasted%20image%2020220701131438.png)
 
 ahora solo tenemos que poner un boton para marcar si una tarea ya esta lista ais que vamos a nuestra plantilla  todo.html y agregamos esto
 
@@ -554,7 +554,7 @@ ahora todo en el back end esta listo, ahora vamos con el front a la pagina todo.
 </form>
 ```
 ahora nos sale la leyenda de Done y si le damos clic queremos ponerle un fondo verde para marcar que ya esta terminado
-![image](README%20IMG/Pasted%2020220701133729.png)
+![image](README%20IMG/Pasted%20image%2020220701133729.png)
 
 vamos a todo.html otra ves y modificamos el "article"
 
@@ -567,7 +567,7 @@ vamos a todo.html otra ves y modificamos el "article"
 
         </div>
 ```
-![image](README%20IMG/Pasted%2020220701134101.png)
+![image](README%20IMG/Pasted%20image%2020220701134101.png)
 
 ahora implementaremos la función de borrar tareas, asi que vamos a views.py y agregamos la siguiente función 
 
@@ -678,7 +678,7 @@ hx-confirm="Are you sure?"
 
 ahora al darle al botón delete nos aparecerá una advertencia
 
-![image](README%20IMG/Pasted%2020220701194457.png)
+![image](README%20IMG/Pasted%20image%2020220701194457.png)
 
 
 ahora pondremos la función de editar, vamos a nuestro todo.html y movemos el form para que este dentro del botón done, justo debajo del if
@@ -785,9 +785,9 @@ ahora solo falta crear nuestra plantilla que acabamos de declarar, esta estará 
 
 ahora vamos a urls.py y ponemos su path
 
-![image](README%20IMG/Pasted%2020220704180312.png)
+![image](README%20IMG/Pasted%20image%2020220704180312.png)
 
 salvamos y listo, ahora cada que demos click en el titulo de una tarea ya sea este terminada o no podremos editarla
 
-![image](README%20IMG/Pasted%2020220704180457.png)
+![image](README%20IMG/Pasted%20image%2020220704180457.png)
 
